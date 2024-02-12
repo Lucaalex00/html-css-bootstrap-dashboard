@@ -21,6 +21,9 @@
             HEADER
 
 *****************************/
+.header_content {
+    height: 50px;
+}
 
 .header_mid {
     background-color: var(--header-search-bar);
@@ -30,13 +33,20 @@
     color: black;
 }
 
+/* PAGE */
+.page {
+    height: calc(100vh - 50px);
+}
+
 /*****************************
 
              NAV
 
 *****************************/
 
-
+.nav_item>a {
+    color: white;
+}
 
 /*****************************
 
@@ -51,3 +61,30 @@
             FOOTER
 
 *****************************/
+
+
+@media screen and (min-width:1200px) {
+    .header_left>img:first-child {
+        display: block;
+    }
+
+    .header_left>img:last-child {
+        display: none;
+    }
+
+    .header_right,
+    .nav_item>a {
+        text-decoration: none;
+        gap: 1rem;
+    }
+
+    .header_right>a>i,
+    .nav_item>a>span {
+        display: block;
+        text-decoration: none;
+    }
+
+    .nav_item>a {
+        display: flex;
+    }
+}

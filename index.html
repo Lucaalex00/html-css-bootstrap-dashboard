@@ -32,13 +32,13 @@
 
 <body>
     <header id="site_header">
-        <div class="header_content d-flex justify-content-between align-items-center p-2 g-2">
-            <div class="header_left d-flex justify-content-start col-2">
+        <div class="header_content d-flex justify-content-between align-items-center px-2 g-2">
+            <div class="header_left d-flex justify-content-center col-2 col-md-1 col-xl-2">
                 <img class="hidden" src="./assets/img/logo.svg" alt="logo">
                 <img src="./assets/img/mobile-logo.png" width="50px" height="50px" alt="logo">
             </div>
             <!-- /.header_item -->
-            <div class="header_mid col-9">
+            <div class="header_mid col-9 col-md-10 col-xl-9">
                 <div class="header_input_container d-flex align-items-center">
                     <i class="p-2 fa-solid fa-magnifying-glass"></i>
                     <input type="text" class="form-control-plaintext" id="staticEmail"
@@ -46,7 +46,8 @@
                 </div>
             </div>
             <!-- /.header_item -->
-            <div class="header_right d-flex justify-content-center align-items-center text-center col-1">
+            <div
+                class="header_right d-flex justify-content-center align-items-center text-center col-1 col-md-1 col-xl-1">
                 <a href="#"><i class="text-warning fa-solid fa-bell"></i></a>
                 <a href="#"><i class="hidden fa-solid fa-list-ul"></i></a>
                 <a href="#"><i class="hidden fa-solid fa-circle-question"></i></a>
@@ -57,14 +58,33 @@
         <!-- /.header_content -->
     </header>
     <!-- /#site_header -->
-    <nav id="navbar" class="left-menu">
+    <div class="page d-flex ">
+        <nav id="navbar"
+            class="left_menu d-flex flex-column justify-content-between align-items-center col-1 col-xl-2 py-3 bg-primary ">
+            <div class="nav_item_top d-flex flex-column gap-2">
+                <div class="nav_item">
+                    <a href="#"><i class="fa-solid fa-house"></i><span class="hidden"> Home</span></a>
+                </div>
+                <div class="nav_item">
+                    <a href="#"><i class="fa-solid fa-chart-simple"></i><span class="hidden"> Stats</span></a>
+                </div>
+                <div class="nav_item">
+                    <a href="#"><i class="fa-solid fa-signal"></i><span class="hidden"> Signals</span></a>
+                </div>
+            </div>
+            <div class="nav_item_bottom">
+                <div class="nav_item"><a href="#"><i class="fa-solid fa-gear"></i><span class="hidden"> Admin</span></a>
 
-    </nav>
-    <!-- /#navbar.left-menu -->
-    <main id="site_main">
+                </div>
+            </div>
+        </nav>
 
-    </main>
-    <!-- /#site_main -->
+        <!-- /#navbar.left-menu -->
+        <main id="site_main" class="col-11 col-xl-10 bg-secondary">
+            ASDASD
+        </main>
+        <!-- /#site_main -->
+    </div>
     <footer id="site_footer">
 
     </footer>
