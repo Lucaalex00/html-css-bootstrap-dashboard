@@ -47,7 +47,8 @@
             </div>
             <!-- /.header_item -->
             <div class="header_right d-flex justify-content-center align-items-center col-1 col-md-1 col-xl-2">
-                <a href="#"><i class="text-warning fa-solid fa-bell"></i></a>
+                <a href="https://design.penpot.app/#/workspace/af8aaf7c-05e6-8124-8003-c15c5033b42b/93d0ad32-dfe5-8194-8003-e27756114fa7?page-id=93d0ad32-dfe5-8194-8003-e27756114fa8"
+                    target="_blank"><i class="text-warning fa-solid fa-bell"></i></a>
                 <a href="#"><i class="hidden fa-solid fa-list-ul"></i></a>
                 <a href="#"><i class="hidden fa-solid fa-circle-question"></i></a>
                 <a href="#"><i class="hidden fa-solid fa-ellipsis-vertical"></i></a>
@@ -60,19 +61,24 @@
     <div class="page d-flex">
         <nav id="navbar"
             class="left_menu d-flex flex-column justify-content-between align-items-center col-1 col-xl-1 p-4">
-            <div class="nav_item_top d-flex flex-column gap-3">
+            <div class="nav_item_top d-flex flex-column gap-4">
                 <div class="nav_item">
-                    <a href="#"><i class="fa-solid fa-house"></i><span class="hidden"> Home</span></a>
+                    <a class="d-flex align-items-center" href="#"><i class="fa-solid fa-house"></i><span class="hidden">
+                            Home</span></a>
                 </div>
                 <div class="nav_item">
-                    <a href="#"><i class="fa-solid fa-chart-simple"></i><span class="hidden"> Stats</span></a>
+                    <a class="d-flex align-items-center" href="#"><i class="fa-solid fa-chart-simple"></i><span
+                            class="hidden">
+                            Stats</span></a>
                 </div>
                 <div class="nav_item">
-                    <a href="#"><i class="fa-solid fa-signal"></i><span class="hidden"> Signals</span></a>
+                    <a class="d-flex align-items-center" href="#"><i class="fa-solid fa-signal"></i><span
+                            class="hidden"> Signals</span></a>
                 </div>
             </div>
             <div class="nav_item_bottom">
-                <div class="nav_item"><a href="#"><i class="fa-solid fa-gear"></i><span class="hidden"> Admin</span></a>
+                <div class="nav_item"><a class="d-flex align-items-center" href="#"><i
+                            class="fa-solid fa-gear"></i><span class="hidden"> Admin</span></a>
 
                 </div>
             </div>
@@ -113,7 +119,7 @@
             <div class="main_container debug col-12 p-2">
                 <!--LEFT-->
                 <div class="main_left d-flex flex-column col-xl-8">
-                    <section class="classes debug col-12">
+                    <section class="classes debug col-12 mb-3">
                         <div class="card debug border border-3">
                             <div class="card_top p-2">
                                 <h4>Prossime Classi</h4>
@@ -288,15 +294,15 @@
                                 </div>
 
                                 <div class="row_faq_card d-flex justify-content-between py-2 border-bottom">
-                                    <div> Come aggiungere un nuovo studente ?</div>
+                                    <div> Come posso accedere alle informazioni del mio account ?</div>
                                     <a class="call-to-action_faq_2" href="#"><i
                                             class="fa-solid fa-chevron-down"></i></a>
                                 </div>
                                 <div class="question_2 hidden border border-black p-2"> ************ RISPOSTA 2
                                     ************
                                 </div>
-                                <div class="row_faq_card d-flex justify-content-between py-2 border-bottom">
-                                    <div> Come aggiungere un nuovo studente ?</div>
+                                <div class="row_faq_card d-flex justify-content-between py-2">
+                                    <div> Posso usare questa dashboard da Mobile?</div>
                                     <a class="call-to-action_faq_3" href="#"><i
                                             class="fa-solid fa-chevron-down"></i></a>
                                 </div>
@@ -309,15 +315,26 @@
                 </div>
                 <!--RIGHT-->
                 <div class="main_right d-flex flex-column col-xl-4">
-                    <section class="todo debug">
+                    <section class="todo debug mb-3">
                         <div class="card debug border border-3">
-                            <div class="card-top p-2">
+                            <div class="card_top p-2">
                                 <h4>Todo</h4>
                             </div>
-                            <div class="card-bottom d-flex flex-column py-3">
-                                <input type="checkbox"> Kickoff nuove classi
-                                <input type="checkbox"> Kickoff nuove classi
-                                <input type="checkbox"> Kickoff nuove classi
+                            <div class="card_bottom d-flex flex-column p-3">
+                                <div class="row_container border border-2 rounded">
+                                    <div class="row_todo_card p-2 d-flex gap-2 border-bottom ">
+                                        <input type="checkbox">
+                                        <div> Kickoff nuove classi</div>
+                                    </div>
+                                    <div class="row_todo_card p-2 d-flex gap-2 border-bottom">
+                                        <input type="checkbox">
+                                        <div> Lezione su Bootstrap 5 in classe #75</div>
+                                    </div>
+                                    <div class="row_todo_card p-2 d-flex gap-2">
+                                        <input type="checkbox">
+                                        <div> Controllare username github studenti </div>
+                                    </div>
+                                </div>
                             </div>
                     </section>
                     <section class="chart debug">
@@ -339,10 +356,6 @@
         </main>
         <!-- /#site_main -->
     </div>
-    <footer id="site_footer">
-
-    </footer>
-    <!-- /#site_footer -->
 </body>
 
 </html>

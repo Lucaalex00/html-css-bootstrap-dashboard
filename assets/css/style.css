@@ -13,15 +13,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.hidden
-
 /* HIDDEN PROPERTY */
-    {
+.hidden {
     display: none;
 }
 
 /* DEBUG */
-.debug {
+.debdug {
     border: 2px dashed black;
 }
 
@@ -77,6 +75,7 @@ body:has(.call-to-action_faq_3:active) .question_3 {
 
 .nav_item>a {
     color: white;
+    text-decoration: none;
 }
 
 /*****************************
@@ -127,8 +126,9 @@ body:has(.call-to-action_faq_3:active) .question_3 {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 
-    &.card_top {
+    & .card_top {
         background-color: var(--primary-color);
+        border-bottom: 3px solid lightgray;
     }
 }
 
@@ -145,6 +145,12 @@ td:last-child {
         margin-right: 4px;
         font-size: 0.8rem;
     }
+}
+
+/*TODO*/
+
+.row_todo_card input[type="checkbox"] {
+    width: 1rem;
 }
 
 /*****************************
@@ -164,7 +170,7 @@ td:last-child {
     }
 
     .header_right {
-        gap: 1.5rem;
+        gap: 2rem;
     }
 
     .header_right>a>i,
@@ -177,9 +183,7 @@ td:last-child {
     }
 
     .nav_item>a {
-        text-decoration: none;
         gap: 1rem;
-        display: flex;
     }
 
     #jumbotron {
