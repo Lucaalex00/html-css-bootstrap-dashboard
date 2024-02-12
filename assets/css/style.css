@@ -21,6 +21,10 @@
             HEADER
 
 *****************************/
+#site_header {
+    width: 100vw;
+}
+
 .header_content {
     height: 50px;
 }
@@ -34,9 +38,13 @@
 }
 
 /* PAGE */
+
 .page {
     height: calc(100vh - 50px);
 }
+
+/* /PAGE */
+
 
 /*****************************
 
@@ -53,8 +61,34 @@
             MAIN
 
 *****************************/
+#site_main {
+    overflow-y: auto;
+}
 
+#jumbotron {
+    background-color: var(--secondary-color);
+    flex-direction: column;
 
+    .jumbo_top>a,
+    .jumbo_mid_up>a,
+    .jumbo_mid_down>a {
+        text-decoration: none;
+    }
+
+    .jumbo_mid_up>h4 {
+        display: inline;
+    }
+
+    .jumbo_mid_down>a,
+    .jumbo_mid_up>a {
+        background-color: rgba(0, 0, 0, 0.2);
+        font-size: 0.8rem;
+    }
+
+    .jumbo_bot div:last-child {
+        font-size: 1.5rem;
+    }
+}
 
 /*****************************
 
@@ -72,19 +106,36 @@
         display: none;
     }
 
-    .header_right,
-    .nav_item>a {
-        text-decoration: none;
-        gap: 1rem;
-    }
-
     .header_right>a>i,
     .nav_item>a>span {
         display: block;
+    }
+
+    .header_right>a {
         text-decoration: none;
     }
 
     .nav_item>a {
+        text-decoration: none;
+        gap: 1rem;
         display: flex;
+    }
+
+    #jumbotron {
+        flex-direction: row;
+
+
+        .jumbo_mid_down>a,
+        .jumbo_mid_up>a {
+            display: inline;
+
+            &.expand {
+                display: none;
+            }
+        }
+
+        .jumbo_top {
+            order: 1;
+        }
     }
 }
