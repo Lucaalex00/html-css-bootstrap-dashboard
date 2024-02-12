@@ -59,7 +59,7 @@
     <!-- /#site_header -->
     <div class="page d-flex">
         <nav id="navbar"
-            class="left_menu d-flex flex-column justify-content-between align-items-center col-1 col-xl-2 p-4 bg-primary ">
+            class="left_menu d-flex flex-column justify-content-between align-items-center col-1 col-xl-1 p-4">
             <div class="nav_item_top d-flex flex-column gap-3">
                 <div class="nav_item">
                     <a href="#"><i class="fa-solid fa-house"></i><span class="hidden"> Home</span></a>
@@ -79,15 +79,15 @@
         </nav>
 
         <!-- /#navbar.left-menu -->
-        <main id="site_main" class="col-11 col-xl-10 bg-secondary">
+        <main id="site_main" class=" debug col-11 col-xl-11">
             <section id="jumbotron" class="new_student col-12 d-flex gap-3 py-4 px-2 text-light">
-                <div class="jumbo_top col-6 col-xl-4">
+                <div class="jumbo_top col-6 col-xl-2">
                     <a href="#" class="text-light d-flex justify-content-start align-items-center gap-3">
                         <span>Nuovo Studente</span>
                         <i class="border border-light p-2 rounded fa-solid fa-plus"></i>
                     </a>
                 </div>
-                <div class="jumbo_mid col-6 col-xl-4">
+                <div class="jumbo_mid col-6 col-xl-5">
                     <div class="jumbo_mid_up">
                         <h4>Boolean</h4>
                         <a href="#" class="text-light p-1 rounded"><span>Piano blaze</span></a>
@@ -104,14 +104,64 @@
                         <a href="#" class="hidden p-1 rounded text-light"><span>Boolean Blog app</span></a>
                     </div>
                 </div>
-                <div class="jumbo_bot col-8 col-xl-4">
+                <div class="jumbo_bot col-8 col-xl-5">
                     <div>Studenti online negli ultimi 30 minuti</div>
                     <div>125</div>
                 </div>
 
             </section>
-            <section></section>
-            <section></section>
+            <div class="main_container debug col-12">
+                <!--LEFT-->
+                <div class="main_left d-flex flex-column col-xl-8">
+                    <section class="classes debug col-12">
+                        <div class="card debug border border-3 border-light">
+                            <div class="card-top p-2">
+                                <h4>Prossime Classi</h4>
+                            </div>
+                            <div class="card-bottom p-3">
+                                <table></table>
+                            </div>
+                    </section>
+                    <section class="faq debug col-12">
+                        <div class="card debug border border-3 border-light">
+                            <div class="card-top p-2">
+                                <h4>F.A.Q</h4>
+                            </div>
+                            <div class="card-bottom p-3">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                    </section>
+                </div>
+                <!--RIGHT-->
+                <div class="main_right d-flex flex-column col-xl-4">
+                    <section class="todo debug">
+                        <div class="card debug border border-3 border-light">
+                            <div class="card-top p-2">
+                                <h4>Todo</h4>
+                            </div>
+                            <div class="card-bottom d-flex flex-column py-3">
+                                <input type="checkbox"> Kickoff nuove classi
+                                <input type="checkbox"> Kickoff nuove classi
+                                <input type="checkbox"> Kickoff nuove classi
+                            </div>
+                    </section>
+                    <section class="chart debug">
+                        <div class="card debug border border-3 border-light">
+                            <div class="card-img-container p-2">
+                                <img src="./assets/img/stats.jpeg" alt="chartstats" class="col-12">
+                            </div>
+                            <div class="card-bottom d-flex flex-column py-3">
+                                <h6>Utenti Attivi</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <div class="user_list">Gennaio 1200</div>
+                                <div class="user_list">Febbraio 800</div>
+                                <div class="user_list">Marzo 1500</div>
+                                <a href="#">visualizza report approfondito</a>
+                            </div>
+                    </section>
+                </div>
+            </div>
         </main>
         <!-- /#site_main -->
     </div>

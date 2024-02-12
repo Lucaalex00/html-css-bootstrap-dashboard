@@ -4,6 +4,7 @@
     --secondary-color: rgba(27, 114, 232, 1);
     --header-card-color: rgba(218, 218, 218, 1);
     --header-search-bar: rgba(229, 229, 229, 1);
+    --nav-color: rgba(13, 37, 58, 1);
 
 
 }
@@ -14,6 +15,11 @@
 
 .hidden {
     display: none;
+}
+
+/* DEBUG */
+.debug {
+    border: 2px dashed black;
 }
 
 /*****************************
@@ -51,6 +57,12 @@
              NAV
 
 *****************************/
+#navbar {
+    background-image: url(../img/sidebar-bg.png);
+    background-color: var(--nav-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .nav_item>a {
     color: white;
@@ -64,6 +76,8 @@
 #site_main {
     overflow-y: auto;
 }
+
+/*JUMBO*/
 
 #jumbotron {
     background-color: var(--secondary-color);
@@ -89,6 +103,26 @@
         font-size: 1.5rem;
     }
 }
+
+/*CARD*/
+.card-top {
+    background-color: lightgray;
+}
+
+.card,
+.card-top>div,
+.card-bottom>.card-left>div,
+.card-bottom>.card-right>div {
+    border: 1px solid lightgray;
+    padding: 8px 0;
+}
+
+.card_row,
+.user_list {
+    border-bottom: 1px solid lightgray;
+}
+
+
 
 /*****************************
 
@@ -137,5 +171,9 @@
         .jumbo_top {
             order: 1;
         }
+    }
+
+    .main_container {
+        display: flex;
     }
 }
