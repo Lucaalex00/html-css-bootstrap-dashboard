@@ -25,6 +25,14 @@
     border: 2px dashed black;
 }
 
+/*ANIMATION*/
+
+body:has(.call-to-action_faq_1:active) .question_1,
+body:has(.call-to-action_faq_2:active) .question_2,
+body:has(.call-to-action_faq_3:active) .question_3 {
+    display: block;
+}
+
 /*****************************
 
             HEADER
@@ -113,13 +121,13 @@
 }
 
 /*CARD*/
-.card-top,
+.card_top,
 .card {
     border: 1px solid lightgray;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 
-    &.card-top {
+    &.card_top {
         background-color: var(--primary-color);
     }
 }
