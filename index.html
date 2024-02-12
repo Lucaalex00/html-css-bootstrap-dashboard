@@ -46,7 +46,7 @@
                 </div>
             </div>
             <!-- /.header_item -->
-            <div class="header_right d-flex justify-content-center align-items-center gap-2 col-1 col-md-1 col-xl-1">
+            <div class="header_right d-flex justify-content-center align-items-center col-1 col-md-1 col-xl-2">
                 <a href="#"><i class="text-warning fa-solid fa-bell"></i></a>
                 <a href="#"><i class="hidden fa-solid fa-list-ul"></i></a>
                 <a href="#"><i class="hidden fa-solid fa-circle-question"></i></a>
@@ -79,8 +79,8 @@
         </nav>
 
         <!-- /#navbar.left-menu -->
-        <main id="site_main" class=" debug col-11 col-xl-11">
-            <section id="jumbotron" class="new_student col-12 d-flex gap-3 py-4 px-2 text-light">
+        <main id="site_main" class="debug col-11 col-xl-11">
+            <section id="jumbotron" class="new_student col-12 d-flex gap-3 gap-lg-0 py-4 px-2 text-light">
                 <div class="jumbo_top col-6 col-xl-2">
                     <a href="#" class="text-light d-flex justify-content-start align-items-center gap-3">
                         <span>Nuovo Studente</span>
@@ -110,20 +110,170 @@
                 </div>
 
             </section>
-            <div class="main_container debug col-12">
+            <div class="main_container debug col-12 p-2">
                 <!--LEFT-->
                 <div class="main_left d-flex flex-column col-xl-8">
                     <section class="classes debug col-12">
-                        <div class="card debug border border-3 border-light">
+                        <div class="card debug border border-3">
                             <div class="card-top p-2">
                                 <h4>Prossime Classi</h4>
                             </div>
                             <div class="card-bottom p-3">
-                                <table></table>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Nome</th>
+                                            <th scope="col" class="hidden">Data Inizio</th>
+                                            <th scope="col" class="hidden">ROI</th>
+                                            <th scope="col">Stato</th>
+                                            <th scope="col">Azioni</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <!--ROW-->
+                                        <tr>
+                                            <th scope="row" class="col-6"><img src="./assets/img/class-avatar.jpg"
+                                                    alt="avatar logo" width="30px" height="30px"> Classe 75</th>
+                                            <td class="hidden"> 15 Feb 2021</td>
+                                            <td class="hidden">20%</td>
+                                            <td> <span class="bg-success rounded text-light p-1 ">done</span></td>
+                                            <td>
+                                                <a href="#" class="text-dark border p-1">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </a>
+                                                <a href="#" class="text-dark border p-1">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!--/ROW-->
+
+                                        <!--ROW-->
+                                        <tr>
+                                            <th scope="row" class="col-6"><img src="./assets/img/class-avatar.jpg"
+                                                    alt="avatar logo" width="30px" height="30px"> Classe 76</th>
+                                            <td class="hidden"> 16 Feb 2021</td>
+                                            <td class="hidden">20%</td>
+                                            <td> <span class="bg-success rounded text-light p-1 ">done</span></td>
+                                            <td>
+                                                <a href="#" class="text-dark border p-1"><i class="fa-solid fa-pen"></i>
+                                                </a>
+                                                <a href="#" class="text-dark border p-1"><i
+                                                        class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!--/ROW-->
+
+                                        <!--ROW-->
+                                        <tr>
+                                            <th scope="row" class="col-6"><img src="./assets/img/class-avatar.jpg"
+                                                    alt="avatar logo" width="30px" height="30px"> Classe 77</th>
+                                            <td class="hidden"> 17 Feb 2021</td>
+                                            <td class="hidden">20%</td>
+                                            <td> <span class="bg-warning rounded text-light p-1 ">process</span></td>
+                                            <td>
+                                                <a href="#" class="text-dark border p-1"><i class="fa-solid fa-pen"></i>
+                                                </a>
+                                                <a href="#" class="text-dark border p-1"><i
+                                                        class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!--/ROW-->
+
+                                        <!--ROW-->
+                                        <tr>
+                                            <th scope="row" class="col-6"><img src="./assets/img/class-avatar.jpg"
+                                                    alt="avatar logo" width="30px" height="30px"> Classe 78</th>
+                                            <td class="hidden"> 18 Feb 2021</td>
+                                            <td class="hidden">20%</td>
+                                            <td> <span class="bg-success rounded text-light p-1 ">done</span></td>
+                                            <td>
+                                                <a href="#" class="text-dark border p-1"><i class="fa-solid fa-pen"></i>
+                                                </a>
+                                                <a href="#" class="text-dark border p-1"><i
+                                                        class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!--/ROW-->
+
+                                        <!--ROW-->
+                                        <tr>
+                                            <th scope="row" class="col-6"><img src="./assets/img/class-avatar.jpg"
+                                                    alt="avatar logo" width="30px" height="30px"> Classe 79</th>
+                                            <td class="hidden"> 19 Feb 2021</td>
+                                            <td class="hidden">20%</td>
+                                            <td> <span class="bg-danger rounded text-light p-1 ">failed</span></td>
+                                            <td>
+                                                <a href="#" class="text-dark border p-1"><i class="fa-solid fa-pen"></i>
+                                                </a>
+                                                <a href="#" class="text-dark border p-1"><i
+                                                        class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!--/ROW-->
+
+                                        <!--ROW-->
+                                        <tr>
+                                            <th scope="row" class="col-6"><img src="./assets/img/class-avatar.jpg"
+                                                    alt="avatar logo" width="30px" height="30px"> Classe 80</th>
+                                            <td class="hidden"> 20 Feb 2021</td>
+                                            <td class="hidden">20%</td>
+                                            <td> <span class="bg-success rounded text-light p-1 ">done</span></td>
+                                            <td>
+                                                <a href="#" class="text-dark border p-1"><i class="fa-solid fa-pen"></i>
+                                                </a>
+                                                <a href="#" class="text-dark border p-1"><i
+                                                        class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!--/ROW-->
+
+                                        <!--ROW-->
+                                        <tr>
+                                            <th scope="row" class="col-6"><img src="./assets/img/class-avatar.jpg"
+                                                    alt="avatar logo" width="30px" height="30px"> Classe 81</th>
+                                            <td class="hidden"> 21 Feb 2021</td>
+                                            <td class="hidden">20%</td>
+                                            <td> <span class="bg-danger rounded text-light p-1 ">done</span></td>
+                                            <td>
+                                                <a href="#" class="text-dark border p-1"><i class="fa-solid fa-pen"></i>
+                                                </a>
+                                                <a href="#" class="text-dark border p-1"><i
+                                                        class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!--/ROW-->
+
+                                        <!--ROW-->
+                                        <tr>
+                                            <th scope="row" class="col-6"><img src="./assets/img/class-avatar.jpg"
+                                                    alt="avatar logo" width="30px" height="30px"> Classe 82</th>
+                                            <td class="hidden"> 22 Feb 2021</td>
+                                            <td class="hidden">20%</td>
+                                            <td> <span class="bg-success rounded text-light p-1 ">done</span></td>
+                                            <td>
+                                                <a href="#" class="text-dark border p-1"><i class="fa-solid fa-pen"></i>
+                                                </a>
+                                                <a href="#" class="text-dark border p-1"><i
+                                                        class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!--/ROW-->
+
+                                    </tbody>
+                                </table>
                             </div>
                     </section>
                     <section class="faq debug col-12">
-                        <div class="card debug border border-3 border-light">
+                        <div class="card debug border border-3">
                             <div class="card-top p-2">
                                 <h4>F.A.Q</h4>
                             </div>
@@ -136,7 +286,7 @@
                 <!--RIGHT-->
                 <div class="main_right d-flex flex-column col-xl-4">
                     <section class="todo debug">
-                        <div class="card debug border border-3 border-light">
+                        <div class="card debug border border-3">
                             <div class="card-top p-2">
                                 <h4>Todo</h4>
                             </div>
@@ -147,7 +297,7 @@
                             </div>
                     </section>
                     <section class="chart debug">
-                        <div class="card debug border border-3 border-light">
+                        <div class="card debug border border-3">
                             <div class="card-img-container p-2">
                                 <img src="./assets/img/stats.jpeg" alt="chartstats" class="col-12">
                             </div>
