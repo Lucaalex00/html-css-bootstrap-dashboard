@@ -29,11 +29,13 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <!--/MyStyle.css-->
 
+
     <title>Boolean Menu</title>
 
 </head>
 
 <body>
+
     <header id="site_header">
         <div class="header_content d-flex justify-content-between align-items-center px-2 g-2">
             <div class="header_left d-flex justify-content-center col-2 col-md-1 col-xl-2">
@@ -50,8 +52,16 @@
             </div>
             <!-- /.header_item -->
             <div class="header_right d-flex justify-content-center align-items-center col-1 col-md-1 col-xl-2">
-                <a href="https://design.penpot.app/#/workspace/af8aaf7c-05e6-8124-8003-c15c5033b42b/93d0ad32-dfe5-8194-8003-e27756114fa7?page-id=93d0ad32-dfe5-8194-8003-e27756114fa8"
-                    target="_blank"><i class="text-warning fa-solid fa-bell"></i></a>
+                <div class="dropdown">
+                    <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                        <i class="text-warning fa-solid fa-bell"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Action action</a></li>
+                        <li><a class="dropdown-item" href="#">Another Action here</a></li>
+                    </ul>
+                </div>
                 <a href="#"><i class="hidden fa-solid fa-list-ul"></i></a>
                 <a href="#"><i class="hidden fa-solid fa-circle-question"></i></a>
                 <a href="#"><i class="hidden fa-solid fa-ellipsis-vertical"></i></a>
@@ -164,7 +174,7 @@
                                     <input id="checkbox" required type="checkbox"> Seleziona per proseguire
                                 </label>
                                 <button class="btn btn-primary" type="submit">Salva</button>
-                                <button class="btn btn-warning" onclick="Location.reload()">Svuota</button>
+                                <button class="btn btn-warning" onClick="window.location.reload()">Svuota</button>
                             </div>
                         </div>
                     </div>

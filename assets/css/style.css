@@ -186,7 +186,13 @@ td:last-child {
     }
 
     .header_right {
-        gap: 2rem;
+        gap: 1.5rem;
+        padding: 0;
+
+        >.dropdown>button {
+            padding: 0;
+        }
+
     }
 
     .header_right>a>i,
