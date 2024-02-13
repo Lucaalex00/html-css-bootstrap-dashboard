@@ -24,10 +24,32 @@
 
 /*ANIMATION*/
 
-body:has(.call-to-action_faq_1:active) .question_1,
-body:has(.call-to-action_faq_2:active) .question_2,
-body:has(.call-to-action_faq_3:active) .question_3 {
+body:has(.call-to-action_faq_1:focus) .question_1,
+body:has(.call-to-action_faq_2:focus) .question_2,
+body:has(.call-to-action_faq_3:focus) .question_3 {
     display: block;
+}
+
+#site_main a {
+    transition: 1s;
+}
+
+#site_main a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav_item>a>i {
+    transition: 1s;
+}
+
+.nav_item>a>i:hover,
+.nav_item>a:hover {
+    color: red;
+}
+
+#site_header a:hover {
+    background-color: lightgray;
+    padding: 0.2rem;
 }
 
 /*****************************
@@ -151,6 +173,8 @@ td:last-child {
     }
 }
 
+/*FAQ*/
+
 /*TODO*/
 
 .row_todo_card input[type="checkbox"] {
@@ -164,10 +188,6 @@ td:last-child {
 .chart>.card>.card_bottom>a {
     font-size: 0.8rem;
 }
-
-/*OFFCANVAS*/
-
-
 
 /*****************************
 
