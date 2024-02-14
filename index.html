@@ -34,7 +34,7 @@
 <body>
 
     <header id="site_header">
-        <div class="header_content d-flex justify-content-between align-items-center px-2 g-2">
+        <div class="header_content d-flex justify-content-between align-items-center px-0 px-md-2 g-0 g-xl-2">
             <div class="header_left d-flex justify-content-center col-2 col-md-1 col-xl-2">
                 <img class="hidden" src="./assets/img/logo.svg" alt="logo">
                 <img src="./assets/img/mobile-logo.png" width="50px" height="50px" alt="logo">
@@ -146,13 +146,13 @@
                                     <input type="text" class="form-control">
                                 </div>
                                 <div class="col-4">
-                                    <div class="dropdown" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                                    <div class="dropdown" id="dropdownMenuButtonHidden" data-bs-toggle="dropdown">
                                         <label for="inputState" class="form-label">Stato</label>
                                         <div class="d-flex">
                                             <input type="text" class="form-control border-end-0 rounded-0">
                                             <span class="dropdown-toggle border border-start-0 pe-2 pt-1"></span>
                                         </div>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonHidden">
                                             <li><a class="dropdown-item" href="#">Italy</a></li>
                                             <li><a class="dropdown-item" href="#">France</a></li>
                                             <li><a class="dropdown-item" href="#">Germany</a></li>
@@ -201,7 +201,7 @@
                 </div>
 
             </section>
-            <div class="main_container debug col-12 p-3">
+            <div class="main_container debug col-12 p-1 p-md-3">
                 <!--LEFT-->
                 <div class="main_left d-flex flex-column col-xl-8">
                     <section class="classes debug col-12 mb-3">
@@ -362,6 +362,7 @@
                                     </tbody>
                                 </table>
                             </div>
+                        </div>
                     </section>
                     <section class="faq debug col-12 mb-3">
                         <div class="card debug border border-3">
@@ -421,8 +422,9 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
                     </section>
-                    <section class="chart p-2 debug">
+                    <section class="chart col-12 py-xl-2 debug">
                         <div class="card debug border border-3">
                             <div class="card_img-container p-2">
                                 <img src="./assets/img/stats.jpeg" alt="chartstats" class="col-12">
@@ -438,6 +440,7 @@
                                 <div class="user_list py-2">Marzo 1500</div>
                                 <a class="py-2" href="#">Visualizza report approfondito</a>
                             </div>
+                        </div>
                     </section>
                 </div>
             </div>
