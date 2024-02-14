@@ -44,7 +44,7 @@ body:has(.call-to-action_faq_3:focus) .question_3 {
 
 .nav_item>a>i:hover,
 .nav_item>a:hover {
-    color: red;
+    color: lightgreen;
 }
 
 #site_header a:hover {
@@ -171,6 +171,11 @@ td:last-child {
         margin-right: 4px;
         font-size: 0.8rem;
     }
+}
+
+th>img {
+    width: 30px;
+    height: 30px;
 }
 
 /*FAQ*/
